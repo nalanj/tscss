@@ -1,0 +1,49 @@
+{
+	"name": "@nalanj/tscss",
+	"description": "Typed css in js",
+	"type": "module",
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"version": "0.0.0",
+	"scripts": {
+		"fix": "biome check --write",
+    "lint": "biome check",
+		"test": "tsx --test",
+		"citest": "biome check && tsx --test --test-reporter node-test-github-reporter",
+		"build": "tsc",
+		"clean": "rm -rf dist",
+		"prepare": "rm -rf dist; tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nalanj/tscss.git"
+	},
+	"keywords": [
+		"css",
+    "typescript"
+	],
+	"author": "Alan Johnson",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nalanj/tscss/issues"
+	},
+	"homepage": "https://github.com/nalanj/tscss#readme",
+	"dependencies": {
+		
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"node-test-github-reporter": "1.2.0",
+		"tsx": "4.19.3",
+		"typescript": "5.8.2"
+	},
+	"volta": {
+		"node": "22.14.0"
+	},
+	"files": [
+		"dist/**/*",
+		"README.md",
+		"LICENSE"
+	]
+}
