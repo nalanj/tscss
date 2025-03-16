@@ -8,12 +8,11 @@
 	"version": "0.0.0",
 	"scripts": {
 		"fix": "biome check --write",
-    "lint": "biome check",
+		"lint": "biome check",
 		"test": "tsx --test",
 		"citest": "biome check && tsx --test --test-reporter node-test-github-reporter",
 		"build": "tsc",
-		"clean": "rm -rf dist",
-		"prepare": "rm -rf dist; tsc"
+		"clean": "rm -rf dist"
 	},
 	"repository": {
 		"type": "git",
@@ -21,7 +20,7 @@
 	},
 	"keywords": [
 		"css",
-    "typescript"
+		"typescript"
 	],
 	"author": "Alan Johnson",
 	"license": "MIT",
@@ -30,7 +29,7 @@
 	},
 	"homepage": "https://github.com/nalanj/tscss#readme",
 	"dependencies": {
-		
+		"csstype": "3.1.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
